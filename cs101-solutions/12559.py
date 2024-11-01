@@ -1,0 +1,5 @@
+n=int(input())
+num_list=list(input().split())
+max_length=max([len(item) for item in num_list])
+num_list.sort(key=lambda x:(x*max_length)[:max_length])
+print(''.join(reversed(num_list)),''.join(num_list))
